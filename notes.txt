@@ -1,0 +1,20 @@
+npm init -y
+
+npm install prisma @prisma/client express body-parser
+npm install --save-dev @types/express @types/body-parser
+
+npx tsc --init   
+
+
+
+npx prisma init
+
+After Schema defined
+
+npx prisma generate
+
+npx prisma migrate dev --name init
+
+After implementing app.ts and routes
+
+npx ts-node src/app.ts  ->  to start app
